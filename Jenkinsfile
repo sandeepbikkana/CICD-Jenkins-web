@@ -4,7 +4,7 @@ pipeline {
     environment {
         IMAGE_NAME = "flask-app"
         CONTAINER_NAME = "flask-container"
-        APP_PORT = "8080"
+        APP_PORT = "5000"
     }
 
     stages {
@@ -43,4 +43,3 @@ pipeline {
         }
     }
 }
-
