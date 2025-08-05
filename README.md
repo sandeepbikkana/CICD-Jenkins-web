@@ -29,19 +29,19 @@ Allow ports 22 (SSH), 8080 (Jenkins), and 5000  (application).
 SSH into the instance.
 
 Step 2: Install Java 17
-Install Amazon Corretto 17 (Java runtime) using official AWS instructions.
-sudo rpm --import https://yum.corretto.aws/corretto.key
-sudo curl -Lo /etc/yum.repos.d/corretto.repo https://yum.corretto.aws/corretto.repo
-sudo yum install java-17-amazon-corretto -y
-java -version
+#Install Amazon Corretto 17 (Java runtime) using official AWS instructions.
+#sudo rpm --import https://yum.corretto.aws/corretto.key
+#sudo curl -Lo /etc/yum.repos.d/corretto.repo https://yum.corretto.aws/corretto.repo
+#sudo yum install java-17-amazon-corretto -y
+#java -version
 
 Step 3: Install Jenkins
-Add the Jenkins repo and import the GPG key.
-sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
-sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
-sudo yum install jenkins -y
-sudo systemctl start jenkins
-sudo systemctl enable jenkins
+#Add the Jenkins repo and import the GPG key.
+#sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+#sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+#sudo yum install jenkins -y
+#sudo systemctl start jenkins
+#sudo systemctl enable jenkins
 
 
 Install Jenkins via your package manager.
@@ -50,11 +50,11 @@ Start and enable Jenkins service.
 
 Step 4: Install Docker
 Install Docker.
-sudo yum install docker -y
-sudo systemctl start docker
-sudo systemctl enable docker
-sudo usermod -aG docker ec2-user
-newgrp docker
+#sudo yum install docker -y
+#sudo systemctl start docker
+#sudo systemctl enable docker
+#sudo usermod -aG docker ec2-user
+#newgrp docker
 
 Start and enable the Docker service.
 
