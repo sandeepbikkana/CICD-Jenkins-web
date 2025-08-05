@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Clone Code') {
             steps {
-                git 'https://github.com/your-username/my-flask-app.git'  // Replace with your repo
+                git 'https://github.com/sandeepbikkana/CICD-Jenkins-web.git'  // Replace with your repo
             }
         }
 
@@ -43,3 +43,4 @@ pipeline {
         }
     }
 }
+
